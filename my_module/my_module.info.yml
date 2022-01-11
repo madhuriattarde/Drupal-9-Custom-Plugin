@@ -1,0 +1,5 @@
+name: 'My Module'
+type: module
+description: 'Custom Module for: Custom Block, Custom form CRUD operation'
+core: 8.x
+core_version_requirement: '^8 || ^9'

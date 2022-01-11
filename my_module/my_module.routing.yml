@@ -1,0 +1,23 @@
+my_module.all_messages:
+  path: '/my/messages'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\MyMessagesController::index'
+    _title: 'My Messages'
+  requirements:
+    _permission: 'access content'
+
+my_module.show_message:
+  path: '/my/message/{id}'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\MyMessagesController::showMessage'
+    _title: 'Your Message'
+  requirements:
+    _permission: 'access content'
+
+my_module.delete_message:
+  path: '/ajax/message/delete/{id}'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\MyMessagesController::deleteMessage'
+    _title: 'Delete Message'
+  requirements:
+    _access: 'TRUE'

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for the My Module module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function my_module_help($route_name, RouteMatchInterface $route_match) {
+ 
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function my_module_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+ 
+}
+
+/**
+ * Implements hook_hook_info().
+ */
+function my_module_hook_info() {
+
+}
+
+function my_module_page_attachments(array &$attachments) {
+    //Attach library
+    $attachments['#attached']['library'][] = 'my_module/my_module_css';
+}

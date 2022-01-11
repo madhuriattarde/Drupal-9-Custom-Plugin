@@ -1,0 +1,5 @@
+my_module_css:
+    version: 1.x
+    css:
+        theme:
+          css/my_module.css: {}

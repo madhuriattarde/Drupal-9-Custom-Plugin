@@ -1,0 +1,7 @@
+
+.my-messages thead{
+    background: #000;
+}
+.my-messages tr.odd{
+    background:#ADD8E6;
+}
